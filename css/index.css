@@ -1,0 +1,177 @@
+:root{
+    /* color */
+    --dicord-blue : #5865f2;
+    --background-gray1 : #FFFFFF;
+    --background-gray2 : #99aab5;
+    --background-green : #3BA55C;
+    /* font-black */
+    --font-black1 : #4f545c;
+    --font-black2 : #68727e;
+    /* font-white */
+    --font-white1 : #fff;
+    --font-white2 : #FFFFFF;
+    /* footer */
+}
+
+.unit-link { /* 항상 이 값으로적어야 하나요?? */
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.hide-text { /* 질문하기 clip, clip path */
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(0px 0px 99.9% 99.9%);
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+}
+
+body {
+    background-color: #f2f2f2;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 71px;
+    align-items: center;
+    padding: 0 5% ;
+}
+
+h1 {
+  
+}
+
+.header-container-text {
+    display: flex;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.pc-view-header a {
+    display: inline-block;
+    padding: 0 10px 0;
+    color: var(--dicord-blue);
+    text-decoration: none;
+}
+
+.pc-view-header a:hover {
+    text-decoration: underline;
+}
+
+.moblie-view-header a {
+    display: inline-block;
+    padding: 0 10px 0;
+    color: var(--dicord-blue);
+    text-decoration: none;
+}
+
+.moblie-view-header a:hover {
+    text-decoration: underline;
+}
+
+#main {
+    background-image: url(../img/b7e9dce75f9edb23504e13b4699e208f204e5015.png);
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+.main-container{ 
+    position: relative;
+    top: 40%;
+}
+
+.main-heading {
+    /* display: block; */
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--font-white2);   
+    margin: 0 0 20px;
+}
+
+.main-search {
+    text-align: center;
+}
+
+.main-search input{
+    width: 610px;
+    height: 40px;
+    background-color: var(--background-gray1);
+    border-radius: 20px;
+    border: 1px solid var(--font-black2);
+}
+
+.intro-heading {
+    font-size: 26px;
+    font-weight: 400;
+    margin-top: 104px;
+    color: var(--font-black1);
+    text-align: center;
+}
+
+#intro > p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 75px;
+    text-align: center;
+    color: var(--font-black1);
+    line-height: 1.5;
+}
+
+#intro > p a {
+    text-decoration: none;
+    color: var(--dicord-blue);
+}
+
+.category-container {
+    display: flex;
+    
+}
+
+.category-img {
+    width: 240;
+}
+
+.category-inner-container li {
+    width: 260px;
+    height: 280px;
+    display: inline-block;
+    background-color: var(--background-gray1);
+    text-align: center;
+    
+}
+
+.category-inner-container h2 {
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--dicord-blue);
+    display: block;
+    
+}
+
+.category-inner-container p {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--font-black2);
+}
+
+.category-inner-container hr {
+    height: 1px;
+    background-color: var(--background-gray2);
+    width: 50px;
+    border: none;
+}
+
+.support-inner-container li {
+    width: 260px;
+    height: 280px;
+    display: flex;
+}
