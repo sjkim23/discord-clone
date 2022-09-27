@@ -13,7 +13,7 @@
     /* footer */
 }
 
-.unit-link { /* 항상 이 값으로 해야함*/
+.unit-link { /* 항상 이 값으로 해야함 */
     display: block;
     position: absolute;
     top: 0;
@@ -86,26 +86,22 @@ h1 {
     margin-left: 5px;
 }
 
-.moblie-view-header {
+.join {
     display: flex;
     font-size: 14px;
     margin-right: 10px;   
-}
-
-.moblie-view-header a {
-    display: flex;
     padding: 0 10px 0;
     color: var(--dicord-blue);
     text-decoration: none;
     align-items: center;
 }
 
-.moblie-view-header a:hover {
+.join:hover {
     text-decoration: underline;
 }
 
+/* 햄버거 잘 모르겠어요 
 
-/* 수업시간 예시 
 .moblie-view-header {
     display: none;
 }
@@ -145,12 +141,22 @@ h1 {
     text-align: center;
 }
 
+.search-icon {
+    position: absolute;
+    color: #777;
+    top: 70%;
+    width: 30px;
+    height: 30px;   /* 돋보기가 안커져요 */
+    left: 540px;
+}
+
 .main-search input{
     width: 610px;
     height: 40px;
     background-color: var(--background-gray1);
     border-radius: 20px;
     border: 1px solid var(--font-black2);
+    padding-left: 30px;
 }
 
 .intro-heading {
@@ -195,6 +201,11 @@ h1 {
     background-position: center 14px;
 }
 
+.category-img :hover {
+ /* 마우스 올렸을때 올라오는거 */
+
+}
+   
 .category-inner-container {
     flex-flow: row wrap;
     display: flex;
@@ -457,17 +468,27 @@ nav {
     font-weight: 400;
 }
 
-
-
 #customer-center {
-    float: right;
-    /* display: block; */
+    display: flex;
 }
 
-.customer-center-text { /*  float right 안됨. */
+.customer-center-container {
+    float: right; /* float right 안됨 */
+    position: relative;
+}
+
+.customer-center-text {
     color: var(--font-white1);
     font-weight: 700;
-    position: relative;
+    text-decoration: none;
+    text-align: center;
+    /* align-items: center; */
+}
+
+.customer-center-icon {
+    color: #fff;  /* 왜 안바뀌지*/
+    /* align-items: center; */
+    /* display: flex; */
 }
 
 .customer-center-container {
