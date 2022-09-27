@@ -470,10 +470,13 @@ nav {
 
 #customer-center {
     display: flex;
+    float: right;
+    position: sticky;
+    bottom: 15px;
+    right: 15px;
 }
 
 .customer-center-container {
-    float: right; /* float right 안됨 */
     position: relative;
 }
 
