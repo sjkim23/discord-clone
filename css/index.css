@@ -32,7 +32,6 @@
 }
 
 
-/* block, inline-block, flex, absolute, relative .. 언제어떻게 써야하나 정리가안되요 */
 
 body {
     background-color: var(--background-gray1);
@@ -59,7 +58,6 @@ h1 {
     font-size: 14px;
     margin-right: 10px;
     justify-content: space-between;
-    
 }
 
 .pc-view-header a {
@@ -73,7 +71,7 @@ h1 {
 
 .pc-view-header > a:hover {
     text-decoration: underline;
-} /* 왜안되는걸까.. */
+} /* 왜안되는걸까요.. */
 
 .lang::after {
     content: '';
@@ -147,7 +145,7 @@ h1 {
     top: 70%;
     width: 30px;
     height: 30px;   /* 돋보기가 안커져요 */
-    left: 540px;
+    left: 540px; 
 }
 
 .main-search input{
@@ -460,7 +458,7 @@ nav {
 }
 
 .footer-bottom-links > a:hover {
-    opacity: 1; /* 구인만 따로 클래스 줘야하나 */
+    opacity: 1; 
 }
 
 .footer-bottom-links >a >span {
