@@ -13,7 +13,7 @@
     /* footer */
 }
 
-.unit-link { /* 항상 이 값으로 해야함 */
+.unit-link {
     display: block;
     position: absolute;
     top: 0;
@@ -22,7 +22,7 @@
     bottom: 0;
 }
 
-.hide-text {  /* 항상 이 값으로 해야함 */
+.hide-text { 
     position: absolute;
     clip: rect(1px, 1px, 1px, 1px);
     clip-path: inset(0px 0px 99.9% 99.9%);
