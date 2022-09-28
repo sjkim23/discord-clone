@@ -153,7 +153,9 @@ h1 {
     background-color: var(--background-gray1);
     border-radius: 20px;
     border: 1px solid var(--font-black2);
-    padding-left: 30px;
+    padding-left: 40px;
+    font-size: 14px;
+    outline: none;
 }
 
 .search-icon svg{
@@ -163,12 +165,6 @@ h1 {
     width: 18px;
     height: 18px;   
     left: 15px; 
-}
-
-input {
-    font-size: 14px;
-    outline: none;
-    /* padding-left: 40px; '검색' 글씨 오른쪽으로 안옮겨짐 */
 }
 
 .intro-heading {
@@ -213,8 +209,8 @@ input {
     background-position: center 14px;
 }
 
-.category-container :hover {
-    transform: translateY(-2%); /* 마우스 오버했을때 움직이는거 이미지도 같이?????*/
+.category-inner-container li :hover {
+    transform: translateY(-16px); /* 질문 */
 }
    
 .category-inner-container {
@@ -264,12 +260,6 @@ input {
     margin-top: 20px;
 }
 
-.support-inner-container li {
-    width: 260px;
-    height: 280px;
-    display: flex;
-}
-
 #support {
     display: block;
 }
@@ -289,21 +279,28 @@ input {
     justify-content: center;
     padding-left: 5px;
     padding-right: 5px;
-    border-radius: 5px;
+}
+
+.support-inner-container li {
+    width: 260px;
+    height: 280px;
+    text-align: center;
+    margin: 10px;
+    box-shadow: 0px 9px 30px rgb(200 200 200 / 30%);
+    cursor: pointer;
+    border-radius: 5px;  
+    border-radius: 5px;  
+    background-color: #f2f2f2;
+    display: flex;
 }
 
 .support-inner-container li a {
     text-decoration: none;
 }
 
-/* .support-container :hover { 
-    transform: translateY(-2%);  마우스 오버했을때 움직이는거
- } */
-
 .support-img {
     width: 260px;
     height: 280px;
-    background-color: #f2f2f2;
 }
 
 .support-img img{
@@ -335,16 +332,8 @@ input {
     line-height: 1.5;;
 }
 
-.support-inner-container li {
-    width: 260px;
-    height: 280px;
-    display: inline-block;
-    background-color: var(--background-gray1);
-    text-align: center;
-    margin: 10px;
-    border-radius: 5px;            /* 위와 같은데 radius 작동안함 */
-    box-shadow: 0px 9px 30px rgb(200 200 200 / 30%);
-    cursor: pointer;
+.support-inner-container li :hover {
+    transform: translateY(-16px); /* 마우스 오버했을때 움직이는거 이미지도 같이?????*/
 }
 
 footer {
@@ -368,7 +357,7 @@ footer {
 }
 
 .detail:hover {
-    box-shadow: rgba(0, 0, 0, 0.3);  /* ??적용안됨 */
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 1); 
 } 
 
 .detail-text {
@@ -503,10 +492,8 @@ nav {
     height: 100%;
 }
 
-/* 고객센터에 탭이 안먹힘*/
-
 .customer-center-text {
-    position:absolute;
+    position:absolute;      
     left: 40px;
     top: 15px;
     color: var(--font-white1);
@@ -521,7 +508,7 @@ nav {
 }
 
 .customer-center-icon svg{
-    color: #fff;  /* 색상 안바뀜*/
+    fill: #fff; 
 }
 
 .customer-center-container {
