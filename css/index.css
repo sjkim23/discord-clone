@@ -209,8 +209,8 @@ h1 {
     background-position: center 14px;
 }
 
-.category-inner-container li :hover {
-    transform: translateY(-16px); /* 질문 */
+.category-inner-container li:hover {
+    transform: translateY(-16px); 
 }
    
 .category-inner-container {
@@ -332,8 +332,8 @@ h1 {
     line-height: 1.5;;
 }
 
-.support-inner-container li :hover {
-    transform: translateY(-16px); /* 마우스 오버했을때 움직이는거 이미지도 같이?????*/
+.support-inner-container li:hover {
+    transform: translateY(-16px); 
 }
 
 footer {
@@ -344,6 +344,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center; 
+    overflow:hidden;
 }
 
 .detail {
@@ -518,3 +519,28 @@ nav {
     border-radius: 999rem;
 }
 
+@media screen and (max-width: 600px) {
+
+    .footer-bottom-container {
+        display: table-row
+    }
+
+    .footer-discord {
+        margin: auto;
+    }
+
+    .logo {
+        margin: auto;
+        display: flex;
+    }
+
+    .footer-bottom-container nav {
+        margin: 0 calc(100% / 8);
+        width: 100%;
+    }
+
+    .footer-bottom-nav {
+        max-width: calc(100% / 4);
+    }
+
+}
